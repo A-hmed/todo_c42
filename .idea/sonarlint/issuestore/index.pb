@@ -74,3 +74,5 @@ Japp/src/main/java/com/route/todoappc42/ui/screens/splash/SplashActivity.kt,2/c
 [app/src/main/java/com/route/todoappc42/ui/screens/main/fragments/todo_list/DayViewHolder.kt,1/f/1fe617c6f04e739613693436237e41ec51214fdc
 Œ
 \app/src/main/java/com/route/todoappc42/ui/screens/main/fragments/todo_list/WeekViewHolder.kt,0/f/0f67866d4ab7e81e2088e623e9a720ef1d750e66
+j
+:app/src/main/java/com/route/todoappc42/LocationActivity.kt,d/5/d52b0e6e5cf08ddcce1df990fbcaaaa0869aefda
