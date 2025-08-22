@@ -43,7 +43,7 @@ class TodosAdapter(var todos: List<Todo>) : Adapter<TodosAdapter.TodoViewHolder>
         fun bind(todo: Todo) {
             binding.itemTodoTitle.text = todo.title
             binding.itemTodoTime.text = todo.description
-            binding.root.setOnClickListener {
+            binding.dragItem.setOnClickListener {
                 itemClickListener?.onItemClick(todo)
             }
             binding.icDone.setOnClickListener {

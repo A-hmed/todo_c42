@@ -1,6 +1,7 @@
 package com.route.todoappc42.ui.screens.main.fragments.todo_list
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -16,6 +17,7 @@ import com.kizitonwose.calendar.core.firstDayOfWeekFromLocale
 import com.kizitonwose.calendar.view.DaySize
 import com.kizitonwose.calendar.view.WeekDayBinder
 import com.kizitonwose.calendar.view.WeekHeaderFooterBinder
+import com.route.todoappc42.LocationActivity
 import com.route.todoappc42.R
 import com.route.todoappc42.database.MyDatabase
 import com.route.todoappc42.databinding.FragmentTodoListBinding
@@ -111,6 +113,8 @@ class TodoListFragment : BottomSheetDialogFragment() {
     private fun initTodosRecycler() {
         adapter.itemClickListener = object : TodosAdapter.ItemClickListener {
             override fun onItemClick(todo: Todo) {
+                val todos = MyDatabase.getInstance().getTodoDao().getTodoById(todo.id)
+                Log.e("initTodosRecycler", "todo name = ${todos.first().title}")
             }
 
             override fun onDoneClick(todo: Todo) {
